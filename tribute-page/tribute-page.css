@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffdf9;
+}
+
+header {
+    width: 100%;
+    min-height: 150px;
+    background-color: #beebe9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 75px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 20px;
+    border-color: #beebe9;
+    border-width: 3px;
+    border-style: solid;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: 
+        ". content .";
+}
+
+@media(max-width: 450px) {
+    main {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 3% 94% 3%;
+        grid-template-areas: 
+            ". content .";
+    }
+
+    footer {
+        margin-top: 75px;
+        min-height: 50px;
+        padding: 3%;
+        background-color: #beebe9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    margin-top: 75px;
+    min-height: 50px;
+    background-color: #beebe9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-div {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+#content {
+    grid-area: content;
+}
+
+#lifeTimeList {
+    margin-bottom: 75px;
+}
+
+#citation {
+    font-style: italic;
+}
+
+#sign {
+    padding-top: 15px;
+    font-style: italic;
+}
