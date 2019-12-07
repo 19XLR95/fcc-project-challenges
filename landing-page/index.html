@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./landing-page.css">
+
+        <title>Rand O'Mize Landing Page</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="./assets/images/logo.png" alt="Rand O'Mize logo">
+            <nav>
+                <a class="nav-link" href="#features-div">Features</a>
+                <a class="nav-link" href="#how-it-works-div">How It Works</a>
+                <a class="nav-link" href="#pricing-div">Pricing</a>
+            </nav>
+        </header>
+
+        <main>
+            <div id="form-div">
+                <h1 id="brand">Rand O'Mize</h1>
+                <p id="slogan">Randomly select anything</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" style="width: 100%;">
+                    <input type="email" id="email" name="email" required placeholder="Enter your email to get start...">
+                    <button type="submit" id="submit" name="submit">Get Start</button>
+                </form>
+            </div>
+
+            <div id="features-div">
+                <ul>
+                    <li>
+                        <i id="featuresIcon" class="fa fa-check"></i>
+                        <div>
+                            <h3>Select anything</h3>
+                            <p>You can select anything randomly, such as <strong>file</strong>, <strong>folder</strong>, <strong>text</strong>, <strong>integer</strong>, etc. You just need to tell or import something to select randomly among them. Every hard work will be done by <strong>Rand O'Mize</strong>.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i id="featuresIcon" class="fa fa-check"></i>
+                        <div>
+                            <h3>AI, ML, NLP powered</h3>
+                            <p><strong>Rand O'Mize</strong> is powered with <strong>AI</strong>, <strong>ML</strong> and <strong>NLP</strong>. It is always learning your random selections. Also you can select randomly something with <strong>positive</strong> or <strong>negative</strong> category. For example select randomly text files that contain <strong>positive</strong> phrases.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i id="featuresIcon" class="fa fa-check"></i>
+                        <div>
+                            <h3>API flexibility</h3>
+                            <p>You can do almost anything with the existing <strong>API</strong> but course there is posibility to create your own custom <strong>API</strong>. <strong>Rand O'Mize</strong> have been built with flexibility, freedom and <strong><i class="fa fa-heart"></i></strong></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="how-it-works-div">
+                <iframe src="https://www.youtube.com/embed/OWhiCkEY-Yk" frameborder="0" allowfullscreen="true"></iframe>
+            </div>
+
+            <div id="pricing-div">
+                <div class="pricing-card">
+                    <div class="pricing-card-title">
+                        <h3>Free</h3>
+                    </div>
+    
+                    <div class="pricing-card-content">
+                        <h4>$0/mon</h4>
+                        <ul>
+                            <li>Monthly random select: 1000</li>
+                            <li>Limited AI, ML and NLP</li>
+                            <li>Only built in API</li>
+                        </ul>
+                        <button>Select</button>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-card-title">
+                        <h3>Pro</h3>
+                    </div>
+    
+                    <div class="pricing-card-content">
+                        <h4>$1000/mon</h4>
+                        <ul>
+                            <li>Monthly random select: 5000</li>
+                            <li>Limited AI, ML and NLP</li>
+                            <li>Limited custom API</li>
+                        </ul>
+                        <button>Select</button>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-card-title">
+                        <h3>Enterprise</h3>
+                    </div>
+    
+                    <div class="pricing-card-content">
+                        <h4>$5000/mon</h4>
+                        <ul>
+                            <li>Monthly random select: 10000</li>
+                            <li>Unlimited AI, ML and NLP</li>
+                            <li>Unlimited custom API</li>
+                        </ul>
+                        <button>Select</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Contact</a>
+            </div>
+            <p>Copyright 2019 &copy; <strong>Rand O'Mize</strong> | All rights reserved</p>
+        </footer>
+    </body>
+
+    <script src="./landing-page.js"></script>
+</html>

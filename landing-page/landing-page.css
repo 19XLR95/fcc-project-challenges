@@ -1,0 +1,316 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #DCDCDC;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    background-color: #C0C0C0;
+    top: 0;
+    left: 0;
+    min-height: 120px;
+    z-index: 10;
+}
+
+img {
+    width: 100px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-left: 5%;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    animation-name: nav-link-anim;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-link-anim {
+    100% {
+        box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.3);
+        transform: scale(1.2);
+        color: #FF9933;
+    }
+}
+
+main {
+    position: relative;
+    top: 120px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: 
+        ". form ."
+        ". features ."
+        ". howItWorks ."
+        ". pricing ."
+    ;
+    row-gap: 50px;
+}
+
+#form-div {
+    grid-area: form;
+    justify-self: center;
+    width: 100%;
+}
+
+#brand {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#slogan {
+    margin-top: 0;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 10px;
+    height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 5px;
+    min-width: 250px;
+}
+
+button {
+    background-color: #FF9933;
+    border-width: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 150px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #D6812B;
+}
+
+#features-div {
+    grid-area: features;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+#featuresIcon {
+    font-size: 75px;
+    color: #FF9933;
+    margin-right: 50px;
+}
+
+h1:hover, h3:hover, strong:hover {
+    animation-name: strong-anim;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes strong-anim {
+    100% {
+        color: #FF9933;
+    }
+}
+
+#how-it-works-div {
+    grid-area: howItWorks;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+}
+
+#pricing-div {
+    grid-area: pricing;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 255px;
+    max-width: 255px;
+    min-height: 180px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.pricing-card:hover {
+    animation-name: pricing-card-anim;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pricing-card-anim {
+    100% {
+        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+        transform: scale(1.1);
+    }
+}
+
+.pricing-card-title {
+    background-color: #C0C0C0;
+}
+
+.pricing-card-title > h3 {
+    padding: 5px;
+    text-align: center;
+}
+
+.pricing-card-content > h4 {
+    text-align: center;
+}
+
+.pricing-card-content > button {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing-card-content > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card-content > ul > li {
+    margin: 0 5% 10px 5%;
+}
+
+footer {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div > a {
+    color: black;
+    margin: 0 10px 0 10px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+footer > div > a:hover {
+    animation-name: strong-anim;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@media(max-width: 450px) {
+    nav {
+        margin-left: auto;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        padding: 3px;
+        font-size: 15px;
+    }
+
+    main {
+        position: relative;
+        top: 120px;
+        display: grid;
+        grid-template-columns: 3% 94% 3%;
+        grid-template-areas: 
+            ". form ."
+            ". features ."
+            ". howItWorks ."
+            ". pricing ."
+        ;
+        row-gap: 50px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #featuresIcon {
+        font-size: 50px;
+        color: #FF9933;
+        margin-right: 25px;
+    }
+
+    #pricing-div {
+        grid-area: pricing;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 255px;
+        max-width: 255px;
+        min-height: 180px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 20px;
+    }
+}
