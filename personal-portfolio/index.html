@@ -16,13 +16,13 @@
         <header>
             <nav>
                 <ul>
-                    <li>
+                    <li onclick="scrollToHeader()">
                         <a>About</a>
                     </li>
-                    <li>
+                    <li onclick="scrollToProjects()">
                         <a>Work</a>
                     </li>
-                    <li>
+                    <li onclick="scrollToContact()">
                         <a>Contact</a>
                     </li>
                 </ul>
@@ -34,7 +34,69 @@
 
         <main>
             <h2>These are some of my projects</h2>
+
+            <section id="projects">
+                <div>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Tribute Page SS">
+                        <div>Tribute Page</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote SS">
+                        <div>Random Quote</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator SS">
+                        <div>JavaScript Calculator</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="Map Data Across The Globe SS">
+                        <div>Map Data Across The Globe</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="Wikipedia Viewer SS">
+                        <div>Wikipedia Viewer</div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Toe Game SS">
+                        <div>Tic Tac Toe Game</div>
+                    </a>
+                </div>
+
+
+            </section>
+
+            <div id="btnShowContainer">
+                <a id="btnShow" href="#">Show All ></a>
+            </div>
         </main>
+
+        <footer>
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+            <div>
+                <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fa fa-github"></i> GitHub</a>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa fa-at"></i> Send a Mail</a>
+                <a href="#"><i class="fa fa-mobile"></i> Call me</a>
+            </div>
+        </footer>
     </body>
 
     <script src="./personal-portfolio.js"></script>

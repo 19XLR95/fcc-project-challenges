@@ -77,10 +77,120 @@ main {
     align-items: center;
 }
 
-main > h2 {
+h2 {
     margin: 0;
     padding: 75px 15px 5px 15px;
     color: white;
     font-size: 35px;
     border-bottom: 3px solid white;
+}
+
+#projects {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media(max-width: 1300px) {
+    #projects {
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 35px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    @media(max-width: 780px) {
+        #projects {
+            margin-top: 75px;
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 35px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+}
+
+#projects > div > a {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects img {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#projects > div > a > div {
+    background-color: #304458;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#btnShowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnShow {
+    background-color: #304458;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: background-color 0.5s;
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+#btnShow:hover {
+    background-color: #DC143C;
+}
+
+footer {
+    background-color: #304458;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > p {
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+}
+
+footer > div {
+    margin-bottom: 75px;
+}
+
+@media(max-width: 800px) {
+    footer > div {
+        margin-bottom: 75px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+footer > div > a {
+    margin-right: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+    top: 0;
+}
+
+footer > div > a:hover {
+    top: 10px;
+}
+
+footer > div > a:last-child {
+    margin-right: 0;
 }
